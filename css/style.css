@@ -102,7 +102,13 @@ nav .nav-link:hover {
 nav .nav-link:hover::before {
   width: 100%;
 }
+nav .nav-link > span {
+  display: block;
+  padding-bottom: 4px;
+  margin-bottom: -4px;
+}
 nav .nav-link::before {
+  pointer-events: none;
   content: "";
   background: linear-gradient(90deg, #7c3aed, #8b5cf6);
   width: 0;
@@ -433,9 +439,14 @@ nav .mega-menu h3 {
   nav .nav-link:hover::before {
     width: 0;
   }
+  nav .nav-link > span {
+    padding: 12px;
+    margin: -12px;
+  }
   nav .nav-link.active {
     font-weight: 500;
-    color: #314158 !important;
+    color: var(--violate-600) !important;
+    background-color: #f5f3ff;
   }
   nav .nav-link:hover {
     background-color: #f5f3ff;
@@ -443,6 +454,20 @@ nav .mega-menu h3 {
   }
   nav .nav-link.show {
     color: var(--main-color) !important;
+    background-color: #f5f3ff !important;
+  }
+  nav .dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav .dropdown-toggle:hover {
+    background-color: #f5f3ff !important;
+  }
+  nav .dropdown-toggle svg {
+    transition: transform 0.3s;
+  }
+  nav .dropdown-toggle.show svg {
+    transform: rotate(180deg);
   }
   .navbar .dropdown-menu {
     height: 400px;
@@ -479,7 +504,7 @@ nav .mega-menu h3 {
   }
 }
 
-/* end navbar media query */
+/* start navbar media query */
 
 /*Start hero section */
 #hero {
@@ -647,15 +672,14 @@ nav .mega-menu h3 {
   line-height: 48px;
 }
 .section-title h2 span {
-  background: linear-gradient(90deg, #7f22fe , #fe9a00);
+  background: linear-gradient(90deg, #7f22fe, #fe9a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* ================ */
   background-clip: text;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   color: var(--violate-600); /*fallback value*/
-
- 
 }
 .section-title p {
   font-size: 20px;
@@ -1448,7 +1472,7 @@ footer .footer-par svg {
 }
 /* end footer section */
 
-/* Handle Open And Close Menu Btn   */
+/* Handle Open And Close Menu Btn (toggle btn icon (burgger menu icon or close(X) icon)  */
 
 .toggler-icon-close {
   display: none;

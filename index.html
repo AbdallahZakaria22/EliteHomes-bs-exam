@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +24,7 @@
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Start Navbar section -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-white shadow fixed-top">
-      <div class="container-fluid  ">
+      <div class="container-fluid">
         <span class="navbar-brand logo">EliteHomes</span>
         <button
           class="navbar-toggler"
@@ -41,26 +40,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
               <a class="nav-link active" aria-current="page" href="#hero"
-                >Home</a
+                ><span>Home</span></a
               >
             </li>
 
             <li
-              class="nav-item dropdown position-static"
-              data-bs-auto-close="outside"
-            >
+              class="nav-item dropdown position-static">
               <button
                 class="nav-link dropdown-toggle border-0 bg-transparent d-flex align-items-center"
                 data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
               >
                 Properties
                 <i class="fa-solid fa-chevron-down d-block ms-2"></i>
               </button>
               <div
                 class="dropdown-menu w-100 border-0 shadow bg-white mt-0 px-2 py-0 p-lg-4 mega-menu"
-                data-bs-auto-close="false"
               >
                 <!-- Mega Menu On Large Screens -->
                 <div class="row d-none d-lg-flex">
@@ -72,7 +73,7 @@
                         <a href="#" class="d-block text-decoration-none">
                           <div class="feature d-flex align-items-center">
                             <div class="feature-img">
-                              <img 
+                              <img loading="lazy"
                                 class="d-block rounded-3"
                                 src="imgs/luxury-villa.jpeg"
                                 alt="Luxury Home"
@@ -87,7 +88,7 @@
                         <a href="#" class="d-block text-decoration-none">
                           <div class="feature d-flex align-items-center">
                             <div class="feature-img">
-                              <img 
+                              <img loading="lazy"
                                 class="d-block rounded-3"
                                 src="imgs/modern-apartment.jpeg"
                                 alt="Modern Apartment"
@@ -162,7 +163,7 @@
                             <div
                               class="location-img position-relative rounded-4 h-100"
                             >
-                              <img 
+                              <img loading="lazy"
                                 src="imgs/new-york.jpeg"
                                 alt="New York"
                                 class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -188,7 +189,7 @@
                             <div
                               class="location-img position-relative rounded-4 h-100"
                             >
-                              <img 
+                              <img loading="lazy"
                                 src="imgs/los-angeles.jpeg"
                                 alt="Los Angeles"
                                 class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -214,7 +215,7 @@
                             <div
                               class="location-img position-relative rounded-4 h-100"
                             >
-                              <img 
+                              <img loading="lazy"
                                 src="imgs/miami.jpeg"
                                 alt="Miami"
                                 class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -353,7 +354,7 @@
                       >
                         <div class="feature d-flex gap-2 align-items-center">
                           <div class="feature-img">
-                            <img 
+                            <img loading="lazy"
                               class="d-block rounded-3"
                               src="imgs/luxury-villa.jpeg"
                               alt="Luxury Home"
@@ -371,7 +372,7 @@
                       >
                         <div class="feature d-flex gap-2 align-items-center">
                           <div class="feature-img">
-                            <img 
+                            <img loading="lazy"
                               class="d-block rounded-3"
                               src="imgs/modern-apartment.jpeg"
                               alt="Modern Apartment"
@@ -441,7 +442,7 @@
                           <div
                             class="location-img position-relative rounded-4 h-100"
                           >
-                            <img 
+                            <img loading="lazy"
                               src="imgs/new-york.jpeg"
                               alt="New York"
                               class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -470,7 +471,7 @@
                           <div
                             class="location-img position-relative rounded-4 h-100"
                           >
-                            <img 
+                            <img loading="lazy"
                               src="imgs/los-angeles.jpeg"
                               alt="Los Angeles"
                               class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -499,7 +500,7 @@
                           <div
                             class="location-img position-relative rounded-4 h-100"
                           >
-                            <img 
+                            <img loading="lazy"
                               src="imgs/miami.jpeg"
                               alt="Miami"
                               class="w-100 h-100 d-block rounded-4 object-fit-cover"
@@ -586,17 +587,33 @@
 
             <!-- =======================End =================== -->
 
-            <li class="nav-item">
-              <a class="nav-link" href="#Services">Services</a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#Services"><span>Services</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Testimonials">Testimonials</a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#Testimonials"><span>Testimonials</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#FAQ">FAQ</a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#FAQ"><span>FAQ</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-0" href="#Contact">Contact</a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link me-0" href="#Contact"><span>Contact</span></a>
             </li>
           </ul>
         </div>
@@ -779,7 +796,7 @@
           <div class="col-lg-4">
             <div class="feature-card overflow-hidden h-100 shadow-lg rounded-4">
               <div class="feature-card-img position-relative overflow-hidden">
-                <img 
+                <img loading="lazy"
                   class="w-100 object-fit-cover rounded-top-4 d-block h-100"
                   src="imgs/featured-properties-img-1.png"
                   alt="modern luxury house with pool, contemporary architecture, beautiful garden"
@@ -824,7 +841,7 @@
                     class="agent-info d-flex align-items-center justify-content-between"
                   >
                     <div class="image d-flex align-items-center">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-2.jpg"
                         alt="Agent"
                         class="d-block rounded-circle"
@@ -840,7 +857,7 @@
           <div class="col-lg-4">
             <div class="feature-card overflow-hidden h-100 shadow-lg rounded-4">
               <div class="feature-card-img position-relative overflow-hidden">
-                <img 
+                <img loading="lazy"
                   class="w-100 object-fit-cover rounded-top-4 d-block h-100"
                   src="imgs/featured-properties-img-2.png"
                   alt="elegant downtown penthouse apartment with city view, modern interior design"
@@ -885,7 +902,7 @@
                     class="agent-info d-flex align-items-center justify-content-between"
                   >
                     <div class="image d-flex align-items-center">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-5.jpg"
                         alt="Agent"
                         class="d-block rounded-circle"
@@ -901,7 +918,7 @@
           <div class="col-lg-4">
             <div class="feature-card overflow-hidden h-100 shadow-lg rounded-4">
               <div class="feature-card-img position-relative overflow-hidden">
-                <img 
+                <img loading="lazy"
                   class="w-100 object-fit-cover rounded-top-4 d-block h-100"
                   src="imgs/featured-properties-img-3.png"
                   alt="cozy suburban family home with front yard, traditional architecture, welcoming entrance"
@@ -946,7 +963,7 @@
                     class="agent-info d-flex align-items-center justify-content-between"
                   >
                     <div class="image d-flex align-items-center">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-3.jpg"
                         alt="Agent"
                         class="d-block rounded-circle"
@@ -1138,7 +1155,7 @@
                 </div>
                 <div class="col-lg-6 pt-3 pt-lg-0">
                   <div class="service-image position-relative">
-                    <img 
+                    <img loading="lazy"
                       src="imgs/service6.png"
                       alt="Happy family with a real estate agent holding house keys"
                       class="rounded-4 object-fit-cover w-100 h-384"
@@ -1223,7 +1240,7 @@
                 </div>
                 <div class="col-lg-6 pt-3 pt-lg-0">
                   <div class="service-image position-relative">
-                    <img 
+                    <img loading="lazy"
                       src="imgs/service7.png"
                       alt="Real estate agent showing a house to potential buyers"
                       class="rounded-4 object-fit-cover w-100 h-384"
@@ -1312,7 +1329,7 @@
                 </div>
                 <div class="col-lg-6 pt-3 pt-lg-0">
                   <div class="service-image position-relative">
-                    <img 
+                    <img loading="lazy"
                       src="imgs/service-img-4.png"
                       alt="Modern furnished apartment interior with a city view"
                       class="rounded-4 object-fit-cover w-100 h-384"
@@ -1399,7 +1416,7 @@
                 </div>
                 <div class="col-lg-6 pt-3 pt-lg-0">
                   <div class="service-image position-relative">
-                    <img 
+                    <img loading="lazy"
                       src="imgs/service8.png"
                       alt="Investment property portfolio with financial charts"
                       class="rounded-4 object-fit-cover w-100 h-384"
@@ -1484,7 +1501,7 @@
                 </div>
                 <div class="col-lg-6 pt-3 pt-lg-0">
                   <div class="service-image position-relative">
-                    <img 
+                    <img loading="lazy"
                       src="imgs/service-img-5.png"
                       alt="Modern office building in a business district"
                       class="rounded-4 object-fit-cover w-100 h-384"
@@ -1555,7 +1572,7 @@
                   </blockquote>
                   <div class="client-info d-flex align-items-center gap-3">
                     <div class="client-image">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-1.jpg"
                         alt="Client"
                         class="d-block rounded-circle"
@@ -1596,7 +1613,7 @@
                   </blockquote>
                   <div class="client-info d-flex align-items-center gap-3">
                     <div class="client-image">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-2.jpg"
                         alt="Client"
                         class="d-block rounded-circle"
@@ -1635,7 +1652,7 @@
                   </blockquote>
                   <div class="client-info d-flex align-items-center gap-3">
                     <div class="client-image">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-5.jpg"
                         alt="Client"
                         class="d-block rounded-circle"
@@ -1674,7 +1691,7 @@
                   </blockquote>
                   <div class="client-info d-flex align-items-center gap-3">
                     <div class="client-image">
-                      <img 
+                      <img loading="lazy"
                         src="imgs/avatar-3.jpg"
                         alt="Client"
                         class="d-block rounded-circle"
@@ -2352,6 +2369,5 @@
     <script src="js/all.min.js"></script>
     <!-- bootstrap js file -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    
   </body>
 </html>
